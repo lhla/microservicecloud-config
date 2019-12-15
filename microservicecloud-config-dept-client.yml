@@ -41,16 +41,11 @@ info:
   build.artifactId: ${project.artifactId}
   build.version: ${project.version}
 ---
-spring:
-  profiles:
-    active:
-     - test
----
 server:
   port: 8001
 
 spring:
-  profiles: dev
+  profiles: test
   application:
     name: microservicecloud-config-dept-client
   datasource:
